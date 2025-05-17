@@ -97,7 +97,35 @@ On the other hand, Strategy II optimizes the Information Ratio (excess return ov
 
 % Investment universe
 \subsection{Investment Universe}
-The portfolio comprises 12 ETFs: FXE, EWJ, GLD, QQQ, SPY, SHV, DBA, USO, XBI, ILF, EPP, FEZ, sourced from Yahoo Finance. The S\&P 500 (SPY) serves as the benchmark.
+The portfolio comprises 12 ETFs: Invesco CurrencyShares Euro Trust  (FXE), iShares MSCI Japan ETF (EWJ), SPDR Gold Shares (GLD), Invesco QQQ Trust (QQQ), SPDR S\&P 500 (SPY), iShares Lehman Short Treasury Bond (SHV), PowerShares DB Agriculture Fund (DBA), United States Oil Fund LP (USO), SPDR S\&P Biotech (XBI), iShare S\&P Latin America 40 Index (ILF), iShares MSCI Pacific ex-Japan Index Fund (EPP), and SPDR DJ Euro Stoxxx 50 (FEZ). The prices for these ETFs are sourced from Yahoo! Finance. The S\&P 500 (SPY) serves as the benchmark for our analysis.
+
+\begin{table}[H]
+	\centering
+	\caption{Descriptive Statistics for ETFs (Annualized)}
+	\label{tab:desc}
+	\resizebox{\textwidth}{!}{%
+	\begin{tabular}{lrrrrrr}
+		\toprule
+		\textbf{Ticker} & \textbf{Return (\%)} & \textbf{Volatility (\%)} & \textbf{High} & \textbf{Low} & \textbf{Skewness} & \textbf{Kurtosis} \\
+		\midrule
+		DBA & 2.5301 & 16.9980 & 37.5600 & 12.0317 & -0.1664 & 6.0472 \\
+		EPP & 7.6189 & 25.2304 & 48.1357 & 10.0081 & 0.0586 & 12.7666 \\
+		EWJ & 4.7562 & 20.4827 & 71.8674 & 21.1265 & 0.1947 & 12.3014 \\
+		FEZ & 6.3225 & 26.8285 & 53.4952 & 13.3199 & -0.0486 & 9.8374 \\
+		FXE & -0.6460 & 9.0583 & 149.7630 & 84.8733 & 0.0770 & 2.6814 \\
+		GLD & 9.1907 & 17.3578 & 257.5000 & 53.8300 & -0.1175 & 6.6215 \\
+		ILF & 6.7159 & 33.2600 & 31.9605 & 10.3934 & -0.0149 & 13.9002 \\
+		QQQ & 16.8725 & 22.1957 & 536.5035 & 22.1377 & -0.1509 & 6.9197 \\
+		SHV & 1.3785 & 0.3570 & 108.5959 & 84.8083 & -0.1956 & 35.0192 \\
+		SPY & 11.7749 & 19.7906 & 603.9543 & 50.3796 & -0.0792 & 14.0689 \\
+		USO & -1.7201 & 37.0261 & 939.8403 & 17.0400 & -0.6667 & 10.0215 \\
+		XBI & 14.7602 & 31.1970 & 173.6499 & 13.4354 & -0.0521 & 2.2406 \\
+		\bottomrule
+	
+	\end{tabular}
+}
+\end{table}
+Table (\ref{tab:desc}) presents annualized descriptive statistics for a selection of ETFs, capturing their return, volatility, extreme price levels, and distributional characteristics. Among the ETFs, QQQ (Nasdaq-100) and XBI (Biotech) posted the highest annualized returns at 16.87\% and 14.76\%, respectively, with QQQ also showing the highest observed peak (High = 536.50) outside of oil-based USO. On the other end, USO and FXE reported negative returns, with USO being the most volatile at 37.03\% and exhibiting extreme negative skewness, indicating significant downside risk. SHV, a short-term bond ETF, had the lowest volatility (0.36\%) and the highest kurtosis (signaling infrequent but extreme return events. SPY, a proxy for the S\&P 500, delivered a solid 11.77\% return with moderate skewness and high kurtosis, typical of equity index behavior. These metrics help characterize risk-return tradeoffs and tail behavior across asset classes, which is essential for factor-based portfolio construction. This provides an introduction how we can expect our portfolio to behave, given the strategy of choice.
 
 % Analysis setup
 \subsection{Analysis Setup}
@@ -119,7 +147,6 @@ Each configuration is tested under three levels of risk aversion captured by  $\
 
 % Performance metrics table
 \subsection{Performance Metrics}
-Table \ref{tab:performance} summarizes key metrics for both strategies and SPY over the entire period, focusing on the 180-day estimation window for brevity (full results in Appendix \ref{app:full_metrics}).
 
 \begin{table}[H]
 \centering
@@ -141,6 +168,10 @@ SPY & - & 4.963 & 0.198 & 0.032 & -0.552 & -0.019 & -0.031 \\
 \end{tabular}%
 }
 \end{table}
+
+Table \ref{tab:performance} summarizes key metrics for both strategies and SPY over the entire period, focusing on the 180-day estimation window for brevity (full results in Appendix \ref{app:full_metrics}). One thing to note is that when $\lambda=1$, Strategy I perform the best, with the highest cumulative return, outperforming the SPY and the more aggressive Strategy II. However, depending on our choice of $\lambda$, this comes at the cost of increased volatility, resulting in massive drawdowns between 86\% to 99\% and the worst-case loss of -15.4\%. Also, the Sharpe Ratios are very low, which suggests that the gains from the returns are not efficiently adjusted for risk.
+
+On the other hand, Strategy II consistently outperforms the SPY on risk-adjusted metrics, with Sharpe Ratios in the 0.044-0.046 range, regardless of our choice of $\lambda$. Strategy II also has lower volatility and drawdowns than Strategy I, indicating robust downside protection. Interestingly, the CVaR is significantly better for Strategy I, and even the SPY, which reflects a lack of tail risk control.
 
 % Cumulative returns plots
 \subsection{Cumulative Returns}
@@ -267,11 +298,17 @@ Strategy II outperforms Strategy I and SPY across all estimation windows and $\l
 
 % Market condition impact
 \subsection{Market Conditions}
-During the subprime crisis, Strategy II with 180-day estimation maintained lower volatility and drawdowns compared to 40-day estimation, which was sensitive to market shocks (see Figure \ref{fig:pnl_40}). In the COVID period, Strategy II's wider beta range ($[-2, 2]$) capitalized on market rebounds, outperforming SPY, particularly with $\lambda=0.1$ (Figure \ref{fig:pnl_180}). Non-crisis periods favored $\lambda=0.5$, balancing risk and return, as evident in Figure \ref{fig:pnl_90}. Return distributions (Figures \ref{fig:ret_dist_40}--\ref{fig:ret_dist_180}) show consistent negative skewness and high kurtosis, indicating fat-tailed risks across all configurations.
+Refering to Figures ( \ref{fig:pnl_40}) through (\ref{fig:ret_dist_180}), we see Strategy II reveal pronounced performance differences that align with major market cycles between 2007 and 2013 During the 2008 global financial crisis, markets experienced extreme volatility and widespread losses. The sharp spikes in Strategy II’s cumulative returns—especially under the 90-day and 180-day estimators with low $\lambda$, which suggest that the strategy was able to exploit the market dislocation.
+
+By contrast, shorter-term estimation windows (e.g., 40-day) show more erratic behavior and earlier drawdowns, particularly under low $\lambda$, likely reflecting oversensitivity to market noise and short signal stability. As the window length increases, Strategy II’s performance becomes both stronger and smoother, indicating better capture of trend dynamics and risk moderation. Meanwhile, the relatively flat trajectory of Strategy I (Strat 1) across all windows suggests that the tighter beta constraint and lack of benchmark optimization limited its ability to benefit from large directional moves in the market. 
+
+During the COVID-19 period (mid-2020 to mid-2021), financial markets experienced an unprecedented shock followed by a rapid recovery fueled by aggressive monetary and fiscal stimulus. Strategy II, with its wider beta constraints (-2 to 2) and optimization relative to SPY, was particularly well-positioned to capitalize on this volatility. The strategy’s design allowed it to quickly increase market exposure during the rebound phase, as reflected in the sharp upward trajectory in cumulative returns, especially for lower values of $\lambda$, which prioritize return over risk minimization.
 
 \section{Recommendations}
 \begin{enumerate}
     \item \textbf{Primary Configuration}: Use Strategy II with a 180-day estimation window and $\lambda=0.1$ for maximum returns or $\lambda=0.5$ for balanced risk-return profiles.
+    \item \textbf{Regime-Dependent Method:} Implement rolling metrics such as drawdown signals that reflect rapid shifts in risk and return dynamics.
+    \item \textbf{Beyond Fama-French:} Integrate a model with more factors, such as momentum, profitability.
 
 \end{enumerate}
 

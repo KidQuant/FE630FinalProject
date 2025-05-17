@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  16 MAY 2025 21:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  16 MAY 2025 23:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -595,12 +595,14 @@ cal/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/20
 ist/fonts/enc/dvips/lm/lm-mathex.enc}]
 
 [3]
+
+[4]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-10.
+38.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-Overfull \hbox (12.79369pt too wide) in paragraph at lines 115--116
+Overfull \hbox (12.79369pt too wide) in paragraph at lines 143--144
 []\T1/lmr/m/n/12 Each con-fig-u-ra-tion is tested un-der three lev-els of risk 
 aver-sion cap-tured by $\OML/lmm/m/it/12 ^^U \OMS/lmsy/m/n/12 2 f\OT1/lmr/m/n/1
 2 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 1\OML/lmm/m/it/12 ; \OT1/lmr/m/n/12 0\OML/
@@ -608,145 +610,146 @@ lmm/m/it/12 :\OT1/lmr/m/n/12 5\OML/lmm/m/it/12 ; \OT1/lmr/m/n/12 1\OML/lmm/m/it
 /12 :\OT1/lmr/m/n/12 0\OMS/lmsy/m/n/12 g$\T1/lmr/m/n/12 .
  []
 
-<plots/pnl_wholeperiod_0.1_40.png, id=101, 438.13687pt x 291.33844pt>
+
+
+[5{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+<plots/pnl_wholeperiod_0.1_40.png, id=113, 438.13687pt x 291.33844pt>
 File: plots/pnl_wholeperiod_0.1_40.png Graphic file (type png)
 <use plots/pnl_wholeperiod_0.1_40.png>
 Package pdftex.def Info: plots/pnl_wholeperiod_0.1_40.png  used on input line 1
-52.
+83.
 (pdftex.def)             Requested size: 150.32504pt x 99.96063pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 153.
-<plots/pnl_wholeperiod_0.5_40.png, id=103, 441.14813pt x 291.33844pt>
+(Font)              <10.95> on input line 184.
+<plots/pnl_wholeperiod_0.5_40.png, id=115, 441.14813pt x 291.33844pt>
 File: plots/pnl_wholeperiod_0.5_40.png Graphic file (type png)
 <use plots/pnl_wholeperiod_0.5_40.png>
 Package pdftex.def Info: plots/pnl_wholeperiod_0.5_40.png  used on input line 1
-56.
+87.
 (pdftex.def)             Requested size: 150.32504pt x 99.27603pt.
-<plots/pnl_wholeperiod_1_40.png, id=104, 456.95718pt x 291.33844pt>
+<plots/pnl_wholeperiod_1_40.png, id=116, 456.95718pt x 291.33844pt>
 File: plots/pnl_wholeperiod_1_40.png Graphic file (type png)
 <use plots/pnl_wholeperiod_1_40.png>
-Package pdftex.def Info: plots/pnl_wholeperiod_1_40.png  used on input line 160
+Package pdftex.def Info: plots/pnl_wholeperiod_1_40.png  used on input line 191
 .
 (pdftex.def)             Requested size: 150.32504pt x 95.83968pt.
-
-
-[4{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-<plots/pnl_wholeperiod_0.1_90.png, id=114, 444.91219pt x 291.33844pt>
+<plots/pnl_wholeperiod_0.1_90.png, id=117, 444.91219pt x 291.33844pt>
 File: plots/pnl_wholeperiod_0.1_90.png Graphic file (type png)
 <use plots/pnl_wholeperiod_0.1_90.png>
-Package pdftex.def Info: plots/pnl_wholeperiod_0.1_90.png  used on input line 1
-70.
+Package pdftex.def Info: plots/pnl_wholeperiod_0.1_90.png  used on input line 2
+01.
 (pdftex.def)             Requested size: 150.32504pt x 98.43584pt.
-<plots/pnl_wholeperiod_0.5_90.png, id=115, 447.92343pt x 291.33844pt>
+<plots/pnl_wholeperiod_0.5_90.png, id=118, 447.92343pt x 291.33844pt>
 File: plots/pnl_wholeperiod_0.5_90.png Graphic file (type png)
 <use plots/pnl_wholeperiod_0.5_90.png>
-Package pdftex.def Info: plots/pnl_wholeperiod_0.5_90.png  used on input line 1
-74.
+Package pdftex.def Info: plots/pnl_wholeperiod_0.5_90.png  used on input line 2
+05.
 (pdftex.def)             Requested size: 150.32504pt x 97.77345pt.
-<plots/pnl_wholeperiod_1_90.png, id=116, 463.7325pt x 291.33844pt>
+<plots/pnl_wholeperiod_1_90.png, id=119, 463.7325pt x 291.33844pt>
 File: plots/pnl_wholeperiod_1_90.png Graphic file (type png)
 <use plots/pnl_wholeperiod_1_90.png>
-Package pdftex.def Info: plots/pnl_wholeperiod_1_90.png  used on input line 178
+Package pdftex.def Info: plots/pnl_wholeperiod_1_90.png  used on input line 209
 .
 (pdftex.def)             Requested size: 150.32504pt x 94.43936pt.
-<plots/pnl_wholeperiod_0.1_180.png, id=117, 444.91219pt x 291.33844pt>
+<plots/pnl_wholeperiod_0.1_180.png, id=120, 444.91219pt x 291.33844pt>
 File: plots/pnl_wholeperiod_0.1_180.png Graphic file (type png)
 <use plots/pnl_wholeperiod_0.1_180.png>
 Package pdftex.def Info: plots/pnl_wholeperiod_0.1_180.png  used on input line 
-188.
+219.
 (pdftex.def)             Requested size: 150.32504pt x 98.43584pt.
-<plots/pnl_wholeperiod_0.5_180.png, id=118, 447.92343pt x 291.33844pt>
+<plots/pnl_wholeperiod_0.5_180.png, id=121, 447.92343pt x 291.33844pt>
 File: plots/pnl_wholeperiod_0.5_180.png Graphic file (type png)
 <use plots/pnl_wholeperiod_0.5_180.png>
 Package pdftex.def Info: plots/pnl_wholeperiod_0.5_180.png  used on input line 
-192.
+223.
 (pdftex.def)             Requested size: 150.32504pt x 97.77345pt.
-<plots/pnl_wholeperiod_1_180.png, id=119, 456.95718pt x 291.33844pt>
+<plots/pnl_wholeperiod_1_180.png, id=122, 456.95718pt x 291.33844pt>
 File: plots/pnl_wholeperiod_1_180.png Graphic file (type png)
 <use plots/pnl_wholeperiod_1_180.png>
-Package pdftex.def Info: plots/pnl_wholeperiod_1_180.png  used on input line 19
-6.
+Package pdftex.def Info: plots/pnl_wholeperiod_1_180.png  used on input line 22
+7.
 (pdftex.def)             Requested size: 150.32504pt x 95.83968pt.
-<plots/daily_ret_dis_whole_period_0.1_40.png, id=123, 448.67625pt x 305.64188pt
+
+
+[6 <./plots/pnl_wholeperiod_0.1_40.png> <./plots/pnl_wholeperiod_0.5_40.png> <.
+/plots/pnl_wholeperiod_1_40.png> <./plots/pnl_wholeperiod_0.1_90.png> <./plots/
+pnl_wholeperiod_0.5_90.png> <./plots/pnl_wholeperiod_1_90.png>]
+<plots/daily_ret_dis_whole_period_0.1_40.png, id=142, 448.67625pt x 305.64188pt
 >
 File: plots/daily_ret_dis_whole_period_0.1_40.png Graphic file (type png)
 <use plots/daily_ret_dis_whole_period_0.1_40.png>
 Package pdftex.def Info: plots/daily_ret_dis_whole_period_0.1_40.png  used on i
-nput line 210.
+nput line 241.
 (pdftex.def)             Requested size: 150.32504pt x 102.40114pt.
-<plots/daily_ret_dis_whole_period_0.5_40.png, id=124, 449.42906pt x 305.64188pt
+<plots/daily_ret_dis_whole_period_0.5_40.png, id=143, 449.42906pt x 305.64188pt
 >
 File: plots/daily_ret_dis_whole_period_0.5_40.png Graphic file (type png)
 <use plots/daily_ret_dis_whole_period_0.5_40.png>
 Package pdftex.def Info: plots/daily_ret_dis_whole_period_0.5_40.png  used on i
-nput line 214.
+nput line 245.
 (pdftex.def)             Requested size: 150.32504pt x 102.22859pt.
-<plots/daily_ret_dis_whole_period_1_40.png, id=125, 465.23813pt x 305.64188pt>
+<plots/daily_ret_dis_whole_period_1_40.png, id=144, 465.23813pt x 305.64188pt>
 File: plots/daily_ret_dis_whole_period_1_40.png Graphic file (type png)
 <use plots/daily_ret_dis_whole_period_1_40.png>
 Package pdftex.def Info: plots/daily_ret_dis_whole_period_1_40.png  used on inp
-ut line 218.
+ut line 249.
 (pdftex.def)             Requested size: 150.32504pt x 98.75412pt.
-
-
-[5 <./plots/pnl_wholeperiod_0.1_40.png> <./plots/pnl_wholeperiod_0.5_40.png> <.
-/plots/pnl_wholeperiod_1_40.png> <./plots/pnl_wholeperiod_0.1_90.png> <./plots/
-pnl_wholeperiod_0.5_90.png> <./plots/pnl_wholeperiod_1_90.png> <./plots/pnl_who
-leperiod_0.1_180.png> <./plots/pnl_wholeperiod_0.5_180.png> <./plots/pnl_wholep
-eriod_1_180.png>]
 <plots/daily_ret_dis_whole_period_0.1_90.png, id=145, 446.41782pt x 305.64188pt
 >
 File: plots/daily_ret_dis_whole_period_0.1_90.png Graphic file (type png)
 <use plots/daily_ret_dis_whole_period_0.1_90.png>
 Package pdftex.def Info: plots/daily_ret_dis_whole_period_0.1_90.png  used on i
-nput line 228.
+nput line 259.
 (pdftex.def)             Requested size: 150.32504pt x 102.91882pt.
 <plots/daily_ret_dis_whole_period_0.5_90.png, id=146, 449.42906pt x 305.64188pt
 >
 File: plots/daily_ret_dis_whole_period_0.5_90.png Graphic file (type png)
 <use plots/daily_ret_dis_whole_period_0.5_90.png>
 Package pdftex.def Info: plots/daily_ret_dis_whole_period_0.5_90.png  used on i
-nput line 232.
+nput line 263.
 (pdftex.def)             Requested size: 150.32504pt x 102.22859pt.
 <plots/daily_ret_dis_whole_period_1_90.png, id=147, 465.23813pt x 305.64188pt>
 File: plots/daily_ret_dis_whole_period_1_90.png Graphic file (type png)
 <use plots/daily_ret_dis_whole_period_1_90.png>
 Package pdftex.def Info: plots/daily_ret_dis_whole_period_1_90.png  used on inp
-ut line 236.
+ut line 267.
 (pdftex.def)             Requested size: 150.32504pt x 98.75412pt.
 <plots/daily_ret_dis_whole_period_0.1_180.png, id=148, 447.92343pt x 305.64188p
 t>
 File: plots/daily_ret_dis_whole_period_0.1_180.png Graphic file (type png)
 <use plots/daily_ret_dis_whole_period_0.1_180.png>
 Package pdftex.def Info: plots/daily_ret_dis_whole_period_0.1_180.png  used on 
-input line 246.
+input line 277.
 (pdftex.def)             Requested size: 150.32504pt x 102.5737pt.
 <plots/daily_ret_dis_whole_period_0.5_180.png, id=149, 449.42906pt x 305.64188p
 t>
 File: plots/daily_ret_dis_whole_period_0.5_180.png Graphic file (type png)
 <use plots/daily_ret_dis_whole_period_0.5_180.png>
 Package pdftex.def Info: plots/daily_ret_dis_whole_period_0.5_180.png  used on 
-input line 250.
+input line 281.
 (pdftex.def)             Requested size: 150.32504pt x 102.22859pt.
 <plots/daily_ret_dis_whole_period_1_180.png, id=150, 465.23813pt x 305.64188pt>
 
 File: plots/daily_ret_dis_whole_period_1_180.png Graphic file (type png)
 <use plots/daily_ret_dis_whole_period_1_180.png>
 Package pdftex.def Info: plots/daily_ret_dis_whole_period_1_180.png  used on in
-put line 254.
+put line 285.
 (pdftex.def)             Requested size: 150.32504pt x 98.75412pt.
 
 
-[6 <./plots/daily_ret_dis_whole_period_0.1_40.png> <./plots/daily_ret_dis_whole
-_period_0.5_40.png> <./plots/daily_ret_dis_whole_period_1_40.png> <./plots/dail
-y_ret_dis_whole_period_0.1_90.png> <./plots/daily_ret_dis_whole_period_0.5_90.p
-ng> <./plots/daily_ret_dis_whole_period_1_90.png> <./plots/daily_ret_dis_whole_
-period_0.1_180.png> <./plots/daily_ret_dis_whole_period_0.5_180.png> <./plots/d
-aily_ret_dis_whole_period_1_180.png>]
+[7 <./plots/pnl_wholeperiod_0.1_180.png> <./plots/pnl_wholeperiod_0.5_180.png> 
+<./plots/pnl_wholeperiod_1_180.png> <./plots/daily_ret_dis_whole_period_0.1_40.
+png> <./plots/daily_ret_dis_whole_period_0.5_40.png> <./plots/daily_ret_dis_who
+le_period_1_40.png> <./plots/daily_ret_dis_whole_period_0.1_90.png> <./plots/da
+ily_ret_dis_whole_period_0.5_90.png> <./plots/daily_ret_dis_whole_period_1_90.p
+ng>]
 
-[7]
+[8 <./plots/daily_ret_dis_whole_period_0.1_180.png> <./plots/daily_ret_dis_whol
+e_period_0.5_180.png> <./plots/daily_ret_dis_whole_period_1_180.png>]
 
-[8] (./report.aux)
+[9]
+
+[10] (./report.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -755,13 +758,13 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: 04B3F2B5465E1820E7A8EE0FA0CFB267;2148.
  ) 
 Here is how much of TeX's memory you used:
- 13678 strings out of 473190
- 218056 string characters out of 5715801
- 627109 words of memory out of 5000000
- 36693 multiletter control sequences out of 15000+600000
+ 13684 strings out of 473190
+ 218106 string characters out of 5715801
+ 627185 words of memory out of 5000000
+ 36694 multiletter control sequences out of 15000+600000
  636348 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,704b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,10n,79p,1180b,577s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
 cal/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texliv
 e/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/tex
@@ -775,10 +778,10 @@ exmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fo
 nts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/
 public/lm/lmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb>
-Output written on report.pdf (8 pages, 909574 bytes).
+Output written on report.pdf (10 pages, 916954 bytes).
 PDF statistics:
- 269 PDF objects out of 1000 (max. 8388607)
- 188 compressed objects within 2 object streams
- 34 named destinations out of 1000 (max. 500000)
+ 281 PDF objects out of 1000 (max. 8388607)
+ 198 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
  219 words of extra memory for PDF output out of 10000 (max. 10000000)
 
